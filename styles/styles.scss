@@ -175,9 +175,9 @@ section {
                 height: 100%;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
+                filter: blur(1.5rem);
                 &:hover{
-                    filter: grayscale(0);
+                    filter: blur(0);
                 }
             }
         }
@@ -370,7 +370,7 @@ section {
                 font-size: 1.2rem;
             }
         }
-        p{ color: var(--color-grey-2); }
+       // p{ color: var(--color-grey-2); }
     }
 }
 
@@ -466,7 +466,7 @@ section {
             transform: translateY(-5px);
             transition: all .4s ease-in-out;
             img {
-                filter: grayscale(0);
+               filter: blur(0);
                 transform: scale(1.1);
                 box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
             }
@@ -477,7 +477,7 @@ section {
             object-fit: cover;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            filter: grayscale(100%);
+            filter: blur(0);
             transition: all .4s ease-in-out;
         }
         .blog-text {
