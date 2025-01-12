@@ -5,8 +5,9 @@
   list-style: none;
 }
 :root {
-  --color-primary: #264477;
-  --color-secondary: #5da7be;
+  --color-primary: #191d23;
+  --color-secondary: #34a9cc;
+  --color-tertiary: #2ca6cf;    
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -22,8 +23,9 @@
 
 .light-mode {
   --color-primary: #a7cad3;
-  --color-secondary: #687795;
-  --color-white: #2c4453;
+  --color-secondary: #152248;
+  --color-tertiary: #072e39;  
+  --color-white: #40667d;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #323232;
@@ -207,13 +209,13 @@ section {
 /*About*/
 .about-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ 
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
 .about-container .right-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
@@ -273,7 +275,7 @@ section {
 }
 .about-stats .progress-bars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
   grid-gap: 2rem;
 }
 .about-stats .progress-bars .progress-bar {
@@ -419,7 +421,7 @@ section {
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-tertiary);
   position: absolute;
   left: 0;
   top: 0;
@@ -432,7 +434,7 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items h3 {
+.portfolios .portfolio-item .hover-items h2 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
